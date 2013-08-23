@@ -15,6 +15,7 @@ call pathogen#incubate()
 
 " add help directory 
 " :helptags ~/.vim/doc
+call pathogen#helptags()
 
 " set vim swap file directory
 "set directory=~/.tmp
