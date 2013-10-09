@@ -4,3 +4,6 @@
 [submodule ".vim/bundle/nerd-tree"]
 	path = .vim/bundle/nerd-tree
 	url = git@github.com:scrooloose/nerdtree.git
+[submodule ".vim/bundle/vim-editorconfig"]
+	path = .vim/bundle/vim-editorconfig
+	url = git@github.com:editorconfig/editorconfig-vim.git

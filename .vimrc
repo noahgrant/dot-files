@@ -1,8 +1,11 @@
 " my personal preference
-"set sts=2
-"set tabstop=2
-"set shiftwidth=2
+set sts=2
+set tabstop=2
+set shiftwidth=2
 set expandtab
+
+" leave breathing room when zt or zb-ing
+set scrolloff=3
 
 " tell vim to use 256 colors
 set t_Co=256
@@ -73,7 +76,7 @@ set autoindent
 set smartindent
 
 " set folds on indents
-"set foldmethod=indent
+"set foldmethod=syntax
 
 " Linewidth to endless
 set textwidth=0
@@ -149,6 +152,7 @@ set fo+=r
 " not sure what this does
 au FileType html,xhtml comp tidy
 
+au Filetype js setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype html setlocal ts=4 sts=4 sw=4 expandtab
 au Filetype ruby setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype perl setlocal ts=2 sts=2 sw=2 expandtab
