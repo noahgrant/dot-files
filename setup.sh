@@ -1,24 +1,26 @@
 #!/bin/sh
 
+# by noah grant
 # run this script to run through the dot-files repo on a new machine to symlink
-# the dotfiles to the home directory.  binaries will be symlinked to /usr/local/bin/
-FILES=./.*
+# the dotfiles to the home directory.  binaries will be symlinked to /opt/local/bin/
+cd ~/dot-files
+FILES=.*
 
 for f in $FILES 
 do
-  if [ -f $f ]; then
+  if [ -f $f -o -d $f -a $f != '.git' ]; then
     echo "symlinking $f"
-    ln -s $f ~/"$f"
+    ln -sh dot-files/"$f" ~/"$f"
   fi
 done
 
 cd ./bin
-BINSCRIPTS=./*
+BINSCRIPTS=*
 
 for bin in $BINSCRIPTS
 do
-  if [ -f $bin ]; then
-    echo "symlinking $bin to /usr/local/bin"
-    ln -s $bin /usr/local/bin/"$bin"
+  if [ -x $bin ]; then
+    echo "symlinking $bin to /opt/local/bin"
+    ln -s ~/dot-files/"$bin" /opt/local/bin/"$bin"
   fi
 done
