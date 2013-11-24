@@ -1,23 +1,23 @@
 [user]
-	name = Noah Grant
-	email = ngrant@fluid.com
+  name = Noah Grant
+  email = ngrant@fluid.com
 [core]
 [merge]
-	tool = vimdiff
+  tool = vimdiff
 [core]
-	repositoryformatversion = 0
-	filemode = true
-	bare = false
-	logallrefupdates = true
-	ignorecase = true
-	pager = less -R
-	#compression = 6
+  repositoryformatversion = 0
+  filemode = true
+  bare = false
+  logallrefupdates = true
+  ignorecase = true
+  pager = less -R
+  #compression = 6
 [remote "origin"]
-	#fetch = +refs/heads/*:refs/remotes/origin/*
-	#url = git@github.com:FluidInc/jel-joomla.git
+  #fetch = +refs/heads/*:refs/remotes/origin/*
+  #url = git@github.com:FluidInc/jel-joomla.git
 [branch "master"]
-	#remote = origin
-	#merge = refs/heads/master
+  #remote = origin
+  #merge = refs/heads/master
 [color]
   diff = auto
   branch = auto
@@ -31,65 +31,65 @@
   nobranch = red white bold
 
 [alias]
-	s   = status
-	ss  = status --short
-	b   = branch
-	ba  = branch -a -v -v
+  s   = status
+  ss  = status --short
+  b   = branch
+  ba  = branch -a -v -v
 
-	ci  = commit
-	co  = checkout
+  ci  = commit
+  co  = checkout
 
-	d   = diff  -C
-	ds  = diff  -C --stat
-	dsp = diff  -C --stat -p
-	dw  = diff  -C --color-words
+  d   = diff  -C
+  ds  = diff  -C --stat
+  dsp = diff  -C --stat -p
+  dw  = diff  -C --color-words
 
-	l   = log   -C --decorate
-	ls  = log   -C --stat --decorate
-	lsp = log   -C --stat -p --decorate
+  l   = log   -C --decorate
+  ls  = log   -C --stat --decorate
+  lsp = log   -C --stat -p --decorate
 
-	lg  = log   --graph '--pretty=tformat:%Cblue%h%Creset %Cgreen%ar%Creset %Cblue%d%Creset %s'
-	lga = log   --graph '--pretty=tformat:%Cblue%h%Creset %Cgreen%ar%Creset %Cblue%d%Creset %s' --all
+  lg  = log   --graph '--pretty=tformat:%Cblue%h%Creset %Cgreen%ar%Creset %Cblue%d%Creset %s'
+  lga = log   --graph '--pretty=tformat:%Cblue%h%Creset %Cgreen%ar%Creset %Cblue%d%Creset %s' --all
         lol = log --pretty=oneline --abbrev-commit --graph --decorate
-	# this is the most commonly used one, it turns out!
-	l19 = log   --graph '--pretty=tformat:%Cblue%h%Creset %Cgreen%ar%Creset %Cblue%d%Creset %s' --all -19
-	# and this one can be a real lifesaver on a complex tree
-	lsd = log   --graph '--pretty=tformat:%Cblue%h%Creset %Cgreen%ar%Creset %Cblue%d%Creset %s' --all --simplify-by-decoration
-        ltree = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --all --abbrev-commit --date=relative --stat=200,200 -C
+  # this is the most commonly used one, it turns out!
+  l19 = log   --graph '--pretty=tformat:%Cblue%h%Creset %Cgreen%ar%Creset %Cblue%d%Creset %s' --all -19
+  # and this one can be a real lifesaver on a complex tree
+  lsd = log   --graph '--pretty=tformat:%Cblue%h%Creset %Cgreen%ar%Creset %Cblue%d%Creset %s' --all --simplify-by-decoration
+  ltree = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --all --abbrev-commit --date=relative --stat=200,200 -C
 
-        rh = reset --hard
-	ru  = remote update
+  rh = reset --hard
+  ru = remote update
 
-	# "show-branch -g=N" can't be aliased for N easily, so we stop here:
-	sb  = show-branch --sha1-name
+  # "show-branch -g=N" can't be aliased for N easily, so we stop here:
+  sb  = show-branch --sha1-name
 
-	ls-del  = ls-files -d
-	ls-mod  = ls-files -m   # this will include deleted files also
-	ls-new  = ls-files --exclude-standard -o
-	# this one is a MUST have
-	ls-ign  = ls-files --exclude-standard -o -i
+  ls-del  = ls-files -d
+  ls-mod  = ls-files -m   # this will include deleted files also
+  ls-new  = ls-files --exclude-standard -o
+  # this one is a MUST have
+  ls-ign  = ls-files --exclude-standard -o -i
 
-	ka      = !gitk --all
-	kdo     = !gitk --date-order
-	kado    = !gitk --all --date-order
-	kasd    = !gitk --all --simplify-by-decoration
+  ka      = !gitk --all
+  kdo     = !gitk --date-order
+  kado    = !gitk --all --date-order
+  kasd    = !gitk --all --simplify-by-decoration
 [clean]
-	requireForce = false
+  requireForce = false
 [rerere]
-	#enabled = 1
+  #enabled = 1
 [diff]
-	#mnemonicprefix = true
-	#tool = meld
+  #mnemonicprefix = true
+  #tool = meld
 [merge]
-	#tool = meld
+  #tool = meld
 [gui]
-	#editor = gvim
+  #editor = gvim
 [guitool "edit"]
-	#cmd = gvim -f $FILENAME
-	#noconsole = yes
-	#needsfile = yes
+  #cmd = gvim -f $FILENAME
+  #noconsole = yes
+  #needsfile = yes
 [push]
-	#default = matching
+  #default = matching
 
 # http://jorudolph.wordpress.com/2010/01/28/configuring-git-and-mercurial-to-use-diffmerge/
 [mergetool "diffmerge"]
@@ -98,6 +98,6 @@
 [diff]
         #tool = diffmerge
 [difftool "diffmerge"]
-        #cmd = diffmerge \"$LOCAL\" \"$REMOTE\"	
+        #cmd = diffmerge \"$LOCAL\" \"$REMOTE\" 
 [branch]
-	autosetuprebase = always
+  autosetuprebase = always
