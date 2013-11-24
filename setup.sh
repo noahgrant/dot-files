@@ -21,6 +21,6 @@ for bin in $BINSCRIPTS
 do
   if [ -x $bin ]; then
     echo "symlinking $bin to /usr/local/bin"
-    ln -s ~/dot-files/"$bin" /usr/local/bin/"$bin"
+    ln -s ~/dot-files/bin/"$bin" /usr/local/bin/"$bin"
   fi
 done
