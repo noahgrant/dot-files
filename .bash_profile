@@ -8,3 +8,4 @@ shopt -s histappend
 export PROMPT_COMMAND='history -a'
 export HISTFILESIZE=5000
 export HISTSIZE=5000
+export PATH=/usr/local/bin:$PATH

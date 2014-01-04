@@ -28,11 +28,11 @@ fi
 
 #PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 #[[ -s "~/.rvm/scripts/rvm" ]] && source "~/.rvm/scripts/rvm"
-. ~/z/z.sh
+. ~/plugins/z/z.sh
 export PS1='\e[01;32m\u\e[34m@\H \e[01;31m\w \e[32;0m$(showBranch showSHA) \n\[\e[\e[0m\]⚡ \[\e[0m\]'
 
 ### Added by the Heroku Toolbelt
-PATH="/usr/local/heroku/bin:$PATH"
+PATH="/usr/local/heroku/bin:/usr/local/bin:$PATH"
 PATH="$PATH:/usr/local/sbin"
 
 ### Adding coreutils via homebrew and not wanting to prepend commands with a 'g'

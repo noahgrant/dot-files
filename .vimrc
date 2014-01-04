@@ -24,6 +24,7 @@ call pathogen#helptags()
 "set directory=~/.tmp
 
 map <C-T> :tabnew<CR>:VTreeExplore<CR>
+imap jj <Esc>
 
 " shift-alt-arrows - tab nav
 map [1;10D :tabp<CR>
@@ -191,7 +192,7 @@ au BufRead sup.* set ft=mail
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 set background=dark
-colorscheme solarized
+colorscheme solarized 
 
 if has('gui_running')
     set background=light
