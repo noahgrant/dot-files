@@ -163,6 +163,7 @@ au FileType yaml source ~/.vim/scripts/yaml.vim
 
 " for 37signals writeboard files -  include syntax higlighting
 au Filetype writeboard source ~/.vim/syntax/writeboard.vim
+au BufRead,BufNewFile *.hbs set ft=html syntax=handlebars
 "au BufRead,BufNewFile *.writeboard source ~/.vim/syntax/writeboard.vim
 
 " various abbreviations

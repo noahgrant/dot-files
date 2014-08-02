@@ -29,9 +29,10 @@ fi
 #PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 #[[ -s "~/.rvm/scripts/rvm" ]] && source "~/.rvm/scripts/rvm"
 . ~/plugins/z/z.sh
-export PS1='\e[01;32m\u\e[34m@\H \e[01;31m\w \e[32;0m$(showBranch showSHA) \n\[\e[\e[0m\]⚡ \[\e[0m\]'
+export PS1='\e[01;32m\u\e[34m@\H \e[01;31m\w \e[32;0m$(showBranch showSHA) \n\[\e[\e[0m\]ʃ \[\e[0m\]'
 
 ### Added by the Heroku Toolbelt
+PATH="/Library/Frameworks/GDAL.framework/Versions/1.10/Programs:$PATH"
 PATH="/usr/local/heroku/bin:/usr/local/bin:$PATH"
 PATH="$PATH:/usr/local/sbin"
 

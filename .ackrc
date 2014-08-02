@@ -1,4 +1,6 @@
 --type-set=json=.json
+--type-set=coffee=.coffee
 --type-set=ini=.ini
 --type-add=css=.less,.sass,.scss
 --type-set=ts=.ts
+--type-set=hbs=.hbs
