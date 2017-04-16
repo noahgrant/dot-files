@@ -4,3 +4,6 @@
 --type-add=css=.less,.sass,.scss
 --type-set=ts=.ts
 --type-set=hbs=.hbs
+--type-set=jsx=.jsx
+--type-set=haml=.haml
+--type-set=jade=.jade

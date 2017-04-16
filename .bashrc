@@ -5,11 +5,17 @@ alias h='history'
 alias es='exec ${SHELL}'
 alias tu='top -o cpu' #cpu
 alias tm='top -o vsize' #memory
+alias bx='bundle exec'
 
 #git
 alias gcm='git commit -m'
+alias gca='git commit --amend'
+alias grc='git rebase --continue'
+alias gcpc='git cherry-pick --continue'
 alias gpshom='git push origin master'
 alias gplom='git pull origin master'
+alias gsl='git stash list'
+alias gsp='git stash pop'
 
 function mkcd {
   mkdir $1

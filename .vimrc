@@ -3,6 +3,7 @@ set sts=2
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set backupcopy=yes
 
 " leave breathing room when zt or zb-ing
 set scrolloff=3
@@ -14,16 +15,16 @@ set t_Co=256
 set listchars=eol:$,tab:\\t
 
 " pathogen for vim bundles
-call pathogen#incubate() 
+call pathogen#incubate()
 
-" add help directory 
+" add help directory
 " :helptags ~/.vim/doc
 call pathogen#helptags()
 
 " set vim swap file directory
 "set directory=~/.tmp
 
-map <C-T> :tabnew<CR>:VTreeExplore<CR>
+" map <C-T> :tabnew<CR>:VTreeExplore<CR>
 imap jj <Esc>
 
 " shift-alt-arrows - tab nav
@@ -101,6 +102,7 @@ set backspace=2
 set dictionary-=~/.vim/php_funclist.txt dictionary+=~/.vim/php_funclist.txt
 " Use the dictionary completion
 set complete-=k complete+=k
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " http://www.vim.org/tips/tip.php?tip_id=102
 " This function determines, whether we are on the start of the line text (then tab indents) or
@@ -123,9 +125,9 @@ set showmode                   " always show command or insert mode
 set ruler                      " show line and column information
 set showmatch                  " show matching brackets
 set formatoptions=tcqor
-syntax enable 
+syntax enable
 
-set tags=./tags; "use ctags file in current directory or parent, recursive to root 
+set tags=./tags; "use ctags file in current directory or parent, recursive to root
 
 " show the bottom status bar
 set laststatus=2
@@ -158,6 +160,7 @@ au Filetype html setlocal ts=4 sts=4 sw=4 expandtab
 au Filetype ruby setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype perl setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype python setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype java setlocal ts=4 sts=4 sw=4 expandtab
 
 au FileType yaml source ~/.vim/scripts/yaml.vim
 
@@ -187,13 +190,14 @@ au BufRead,BufNewFile *.module set filetype=php
 " for sup
 au BufRead sup.* set ft=mail
 
-"colorscheme jonah
+let g:ctrlp_root_markers = ['package.json']
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|build)$'
 
 " use my transparent background
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 set background=dark
-colorscheme solarized 
+colorscheme solarized
 
 if has('gui_running')
     set background=light
@@ -207,3 +211,7 @@ endif
 
 " jslint plugin!
 filetype plugin on
+
+" trailing spaces
+match ErrorMsg '\s\+$'
+nnoremap <Leader>we :%s/\s\+$//e<CR>

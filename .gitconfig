@@ -1,6 +1,6 @@
 [user]
   name = Noah Grant
-  email = ngrant@fluid.com
+  email = foolproofnoah@gmail.com
 [core]
 [merge]
   tool = vimdiff
@@ -14,7 +14,6 @@
   #compression = 6
 [remote "origin"]
   #fetch = +refs/heads/*:refs/remotes/origin/*
-  #url = git@github.com:FluidInc/jel-joomla.git
 [branch "master"]
   #remote = origin
   #merge = refs/heads/master
@@ -41,7 +40,7 @@
 
   d   = diff  -C
   ds  = diff  -C --stat
-  dsp = diff  -C --stat -p
+  dsp = diff  --color | diff-so-fancy
   dw  = diff  -C --color-words
 
   l   = log   -C --decorate
@@ -98,6 +97,12 @@
 [diff]
         #tool = diffmerge
 [difftool "diffmerge"]
-        #cmd = diffmerge \"$LOCAL\" \"$REMOTE\" 
+        #cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
 [branch]
   autosetuprebase = always
+[push]
+	default = current
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
