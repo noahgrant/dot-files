@@ -17,6 +17,8 @@ alias gplom='git pull origin master'
 alias gsl='git stash list'
 alias gsp='git stash pop'
 
+alias sodadeploy='gcloud app deploy app.yaml --project=prod-soda'
+
 function mkcd {
   mkdir $1
   cd $1
@@ -34,7 +36,7 @@ fi
 
 #PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 #[[ -s "~/.rvm/scripts/rvm" ]] && source "~/.rvm/scripts/rvm"
-. ~/plugins/z/z.sh
+#. ~/plugins/z/z.sh
 export PS1='\e[01;32m\u\e[34m@\H \e[01;31m\w \e[32;0m$(showBranch showSHA) \n\[\e[\e[0m\]ʃ \[\e[0m\]'
 
 ### Added by the Heroku Toolbelt

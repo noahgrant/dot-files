@@ -15,7 +15,7 @@ set t_Co=256
 set listchars=eol:$,tab:\\t
 
 " pathogen for vim bundles
-call pathogen#incubate()
+call pathogen#infect()
 
 " add help directory
 " :helptags ~/.vim/doc
@@ -197,11 +197,11 @@ let g:ctrlp_custom_ignore = '\v[\/](node_modules|build)$'
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 set background=dark
-colorscheme solarized
+colorscheme solarized8
 
 if has('gui_running')
     set background=light
-		colorscheme solarized
+		colorscheme solarized8
 else
     set background=dark
 endif
