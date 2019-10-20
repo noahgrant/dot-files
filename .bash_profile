@@ -1,4 +1,3 @@
-
 source ~/.bashrc
 # export PATH="$HOME/.rbenv/versions:$HOME/.rbenv/bin:$PATH"
 # export RBENV_ROOT=/usr/local/var/rbenv
@@ -8,4 +7,7 @@ shopt -s histappend
 export PROMPT_COMMAND='history -a'
 export HISTFILESIZE=5000
 export HISTSIZE=5000
-export PATH=/usr/local/bin:$PATH
+
+#eval `keychain --eval --agents ssh --inherit any siftscience-east.pem`
+
+source ~/sift/code/tools/envsetup.sh
