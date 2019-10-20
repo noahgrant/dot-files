@@ -192,12 +192,29 @@ au BufRead sup.* set ft=mail
 
 let g:ctrlp_root_markers = ['package.json']
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|build)$'
+let g:vim_jsx_pretty_colorful_config = 1
+let g:javascript_plugin_jsdoc = 1
 
 " use my transparent background
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 set background=dark
 colorscheme solarized
+
+let g:ale_linters = {
+\   'javascript': ['eslint']
+\}
+let g:ale_fixers = {
+\   'javascript': ['eslint']
+\}
+let g:ale_pattern_options = {
+\   '.*\.ts$': {'ale_enabled': 0},
+\   '.*\.tsx$': {'ale_enabled': 0}
+\}
+let g:ale_fix_on_save = 1
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_enter = 0
+let g:ale_javascript_eslint_use_global = 0
 
 if has('gui_running')
     set background=light
@@ -208,9 +225,6 @@ endif
 
 " allow mouse scrolling in normal mode only
 ":set mouse=n
-
-" jslint plugin!
-filetype plugin on
 
 " trailing spaces
 match ErrorMsg '\s\+$'

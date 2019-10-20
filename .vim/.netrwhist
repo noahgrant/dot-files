@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/ngrant/projects/wherearenoahandkat/.git'
-let g:netrw_dirhist_2='/Users/ngrant/projects/melissa-daye/app/views/static_pages'
-let g:netrw_dirhist_3='/Users/ngrant/projects/levi-shop-flow'
+let g:netrw_dirhist_1='/Users/Noah/sift/code/web/src/image/maps'
+let g:netrw_dirhist_2='/Users/Noah/sift/code/web/src'
+let g:netrw_dirhist_3='/Users/Noah/sift/code/deploy/web'
