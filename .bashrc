@@ -7,12 +7,8 @@ alias tu='top -o cpu' #cpu
 alias tm='top -o vsize' #memory
 alias bx='bundle exec'
 
-alias checkstyle='~/sift/console/scripts/checkstyle_changed_files.sh'
-alias last_sha='ssh noah@016.console.prod.useast1.int.siftscience.com "cat /opt/siftscience/console/current/REVISION"'
 alias submodule_sha='git ls-tree master'
-alias upload_exp='rsync -avz ~/sift/console/build/ noah@030.console.expr.useast1.int.siftscience.com:/opt/siftscience/console/current/web/'
-alias upload_staging='rsync -avz ~/sift/console/build/ noah@784.console.stg1.useast1.int.siftscience.com:/opt/siftscience/console/current/web/'
-alias upload_cl='rsync -avz ~/sift/console/build/internal/component-library/ noah@030.console.expr.useast1.int.siftscience.com:/opt/siftscience/component-library/'
+alias jest_debug='node --inspect-brk node_modules/.bin/jest --runInBand'
 
 #git
 alias gcm='git commit -m'
@@ -52,7 +48,6 @@ PATH="$PATH:/usr/local/sbin"
 export EDITOR='/usr/bin/vim'
 # PATH=/Users/Noah/.rvm/gems/ruby-2.0.0-p481/bin:/Users/Noah/.rvm/gems/ruby-2.0.0-p481@global/bin:/Users/Noah/.rvm/rubies/ruby-2.0.0-p481/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/Users/Noah/.rvm/bin
 # PATH=/Users/Noah/sift/code/web/node_modules/.bin:/usr/local/bin:/Users/Noah/.rvm/gems/ruby-2.0.0-p481/bin:/Users/Noah/.rvm/gems/ruby-2.0.0-p481@global/bin:/Users/Noah/.rvm/rubies/ruby-2.0.0-p481/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/Users/Noah/.rvm/bin:/Users/Noah/.rvm/bin
-PATH=/Users/Noah/sift/code/web/node_modules/.bin:$PATH
 SSLKEYLOGFILE=/Users/Noah/sslkeylogfile.log
 
 ### Added by the Heroku Toolbelt
