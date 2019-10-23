@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/Users/Noah/sift/code/web/src/image/maps'
 let g:netrw_dirhist_2='/Users/Noah/sift/code/web/src'
 let g:netrw_dirhist_3='/Users/Noah/sift/code/deploy/web'
+let g:netrw_dirhist_4='/Users/noah/dot-files'

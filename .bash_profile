@@ -7,7 +7,3 @@ shopt -s histappend
 export PROMPT_COMMAND='history -a'
 export HISTFILESIZE=5000
 export HISTSIZE=5000
-
-#eval `keychain --eval --agents ssh --inherit any siftscience-east.pem`
-
-source ~/sift/code/tools/envsetup.sh

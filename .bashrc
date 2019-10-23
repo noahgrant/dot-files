@@ -47,9 +47,7 @@ PATH="$PATH:/usr/local/sbin"
 
 export EDITOR='/usr/bin/vim'
 # PATH=/Users/Noah/.rvm/gems/ruby-2.0.0-p481/bin:/Users/Noah/.rvm/gems/ruby-2.0.0-p481@global/bin:/Users/Noah/.rvm/rubies/ruby-2.0.0-p481/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/Users/Noah/.rvm/bin
-# PATH=/Users/Noah/sift/code/web/node_modules/.bin:/usr/local/bin:/Users/Noah/.rvm/gems/ruby-2.0.0-p481/bin:/Users/Noah/.rvm/gems/ruby-2.0.0-p481@global/bin:/Users/Noah/.rvm/rubies/ruby-2.0.0-p481/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/Users/Noah/.rvm/bin:/Users/Noah/.rvm/bin
-SSLKEYLOGFILE=/Users/Noah/sslkeylogfile.log
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-export SIFT_SSH_USER="noah"
+export PATH="/usr/local/bin:$PATH"
