@@ -3,6 +3,7 @@
 # by noah grant
 # run this script to run through the dot-files repo on a new machine to symlink
 # the dotfiles to the home directory.  binaries will be symlinked to /usr/local/bin/
+mkdir -p ~/projects/dot-files
 cd ~/projects/dot-files
 FILES=.*
 

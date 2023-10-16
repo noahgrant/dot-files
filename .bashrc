@@ -20,10 +20,6 @@ alias gplom='git pull origin master'
 alias gsl='git stash list'
 alias gsp='git stash pop'
 
-alias old_consoledeploy='cd ~/calixa/console && ./calixa_helm -a deploy -e production -k production-usc1'
-alias consoledeploy='cd ~/calistoga/console && gcloud app deploy production-console.yaml --configuration=calistoga --project production-390521'
-alias marketingdeploy='cd ~/calixa/marketing-site && ./calixa_helm -a deploy -e production -k production-usc1'
-alias redis='cd ~/calixa/platform && docker-compose -f local-services/docker-compose.dev.yml up redis'
 alias consoletunnel='ngrok http 11515 -subdomain=noahthegrant'
 
 function mkcd {
@@ -60,3 +56,7 @@ export NPM_PACKAGES_READ_TOKEN=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
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH

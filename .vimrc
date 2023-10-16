@@ -201,9 +201,12 @@ let g:solarized_termtrans=1
 set background=dark
 colorscheme solarized8
 
+let g:ale_floating_preview = 1
+let g:ale_hover_to_preview = 1
+let g:ale_set_balloons = 1
 let g:ale_linters = {
 \   'javascript': ['eslint'],
-\   'typescript': ['eslint']
+\   'typescript': ['tsserver', 'eslint']
 \}
 let g:ale_fixers = {
 \   'javascript': ['eslint']
@@ -217,6 +220,8 @@ let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_insert_leave = 0
 let g:ale_lint_on_enter = 0
 let g:ale_javascript_eslint_use_global = 0
+let g:ale_completion_enabled = 1
+let g:ale_typescript_standard_executable = 'standard'
 let g:dash_activate = 1
 let g:dash_map = {
     \ 'js' : 'javascript'
@@ -235,3 +240,4 @@ endif
 " trailing spaces
 match ErrorMsg '\s\+$'
 nnoremap <Leader>we :%s/\s\+$//e<CR>
+nnoremap K :ALEHover<CR>
