@@ -108,3 +108,5 @@
 	required = true
 [submodule]
 	recurse = true
+[pack]
+	windowMemory = 100m

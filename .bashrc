@@ -20,7 +20,7 @@ alias gplom='git pull origin master'
 alias gsl='git stash list'
 alias gsp='git stash pop'
 
-alias sodadeploy='gcloud app deploy app.yaml --project=prod-soda'
+alias consoletunnel='ngrok http 11515 -subdomain=noahthegrant'
 
 function mkcd {
   mkdir $1
@@ -51,3 +51,12 @@ export EDITOR='/usr/bin/vim'
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
+export NPM_PACKAGES_READ_TOKEN=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
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH
